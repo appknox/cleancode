@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets  {
+    main{
+        java{
+            srcDir 'src/main/java'
+        }
+        resources{
+            srcDir 'resources'
+        }
+    }
+}
+
+
+
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
